@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | App & Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand"><img src="images/logo.jpg" alt="" class="brand-logo">Portfolio</a>
+      <nav class="nav" aria-label="Primary">
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Hey, I'm a Developer 👋</h1>
+          <p>I love turning ideas into reality through code. Whether it's a sleek web app or a mobile experience that just feels right, I'm here to build something amazing together.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <div class="avatar"><img src="images/logo.jpg" alt="Logo" class="avatar-img"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>A bit about me</h2>
+          <p>When I'm not coding, you'll probably find me exploring new technologies or grabbing coffee while sketching out the next big idea. I believe great software should feel invisible – it just works.</p>
+          <p>I've spent years crafting digital experiences that people actually enjoy using. From pixel-perfect interfaces to rock-solid backends, I handle the technical stuff so you can focus on your vision.</p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Years Building</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">30+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Coffee Consumed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Things I've built</h2>
+          <a class="link" href="#contact">Work with me</a>
+        </div>
+        <div id="projectsGrid" class="grid projects-grid">
+          <article class="card project">
+            <div class="cover" data-accent="1"></div>
+            <div class="card-body">
+              <h3>Project One</h3>
+              <p>Modern web application featuring authentication, dashboards, and API integrations.</p>
+              <div class="card-actions">
+                <a class="btn sm" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn sm outline" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="cover" data-accent="2"></div>
+            <div class="card-body">
+              <h3>Project Two</h3>
+              <p>Cross-platform mobile app with offline-first data and push notifications.</p>
+              <div class="card-actions">
+                <a class="btn sm" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn sm outline" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+          <article class="card project">
+            <div class="cover" data-accent="3"></div>
+            <div class="card-body">
+              <h3>Project Three</h3>
+              <p>Full-stack app with real-time updates, role-based access, and analytics.</p>
+              <div class="card-actions">
+                <a class="btn sm" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn sm outline" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container two-col contact">
+        <div>
+          <h2>Let's work together</h2>
+          <p>Got an idea brewing? I'd love to hear about it! Whether it's a quick chat or a full project, I'm always excited to collaborate with passionate people.</p>
+          <ul class="contact-list">
+            <li><a href="mailto:you@example.com">you@example.com</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" action="https://formsubmit.co" method="POST">
+          <input type="hidden" name="_subject" value="New portfolio message">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> App & Web Developer</p>
+      <a class="link" href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
